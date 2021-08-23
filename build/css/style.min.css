@@ -58,6 +58,11 @@
 }
 .main {
   background-color: #7711DD;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 49%;
+  height: 100vh;
 }
 .main .main_icons_container {
   display: flex;
@@ -72,12 +77,9 @@
 }
 .main .main_info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main .phone {
-  position: relative;
-  right: 0;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 182px;
 }
 .main .main_title {
   font-family: "Permanent Marker", sans-serif;

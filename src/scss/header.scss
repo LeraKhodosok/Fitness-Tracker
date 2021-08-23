@@ -21,6 +21,11 @@
 
 .main {
   background-color: #7711DD;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 49%;
+  height: 100vh;
 
   .main_icons_container {
     display: flex;
@@ -37,13 +42,9 @@
 
   .main_info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .phone {
-    position: relative;
-    right: 0;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 182px;
   }
 
   .main_title {
