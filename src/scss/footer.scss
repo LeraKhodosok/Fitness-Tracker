@@ -1,0 +1,66 @@
+@mixin font_text_bold ($fz, $clr, $line_height) {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_btn ($fz) {
+  font-family: "Montserrat Black", sans-serif;
+  font-size: $fz;
+  color: #FFFFFF;
+  width: 189px;
+  height: 47px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFBD12;
+  border: 1px solid #1C1C1D;
+  box-shadow: 0 4px 0 #202020;
+  border-radius: 10px;
+}
+
+.footer {
+  background: #7711DD;
+  padding: 42px 0;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .link_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .link {
+      text-decoration: none;
+      @include font_text_bold(17px, #FFFFFF, 20px);
+      margin-right: 35px;
+    }
+  }
+
+  .footer_btn_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer_btn {
+      @include font_btn(16px);
+      margin-right: 29px;
+
+      &:last-child {
+      margin-right: 0;
+    }
+    }
+  }
+}
+
+.download_img {
+  margin-right: 8px;
+}
+

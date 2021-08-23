@@ -1,0 +1,121 @@
+@mixin font_titles ($fz, $clr, $line_height) {
+  font-family: "Permanent Marker",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_regular ($fz, $clr, $line_height) {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_bold ($fz, $clr, $line_height) {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  height: 600px;
+
+  .about_title {
+    @include font_titles(45px, #000000, 48px);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .about_text {
+    @include font_text_regular(18px, #000000, 27px);
+    width: 500px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+
+
+  .about-slider {
+
+    .swiper-slide {
+      width: 340px;
+      height: 183px;
+      padding: 25px 23px 30px 20px;
+
+      border: 2px solid #1C1C1D;
+      box-shadow: 0 4px 0 #202020;
+      border-radius: 10px;
+
+      margin-right: 30px;
+
+      &.red {
+        background: #FA6648;
+      }
+
+      &.pink {
+        background: #FFB0BC;
+      }
+
+      &.yellow {
+        background: #FFBD12;
+      }
+    }
+
+    .slider_text_block {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .picture_block {
+      background: #FFFFFF;
+      width: 88px;
+      height: 73px;
+      margin-right: 22px;
+
+      border: 1px solid #1C1C1D;
+      border-radius: 10px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .slider_title {
+      @include font_text_bold(20px, #FFFFFF, 24px);
+      text-align: left;
+      width: 173px;
+    }
+
+    .slider_text {
+      @include font_text_regular(16px, #FFFFFF, 20px);
+      text-align: left;
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.swiper-wrapper {
+  margin-bottom: 50px;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #1C1C1D;
+  background-color: #FFBD12;
+  margin-bottom: 80px;
+}

@@ -1,0 +1,163 @@
+@mixin font_titles ($fz, $clr, $line_height) {
+  font-family: "Permanent Marker",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_medium ($fz, $clr, $line_height) {
+  font-family: "Montserrat Medium", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_btn_tariff ($fz, $line_height) {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: $fz;
+  line-height: $line_height;
+  width: 140px;
+  height: 60px;
+}
+
+@mixin font_tariff_title ($fz, $line_height) {
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: $fz;
+  line-height: $line_height;
+}
+
+@mixin tariff_block($bg) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 30px 45px 30px;
+
+  background: $bg;
+  border: 2px solid #1C1C1D;
+  box-shadow: 0 8px 0 #202020;
+  border-radius: 10px;
+}
+
+.tariff {
+  background: #FFFFFF;
+  padding-bottom: 80px;
+  text-align: center;
+
+  .tariff_text {
+    @include font_text_medium(18px, #474A57, 26px);
+    margin: 0 0 15px;
+  }
+
+  .tariff_title {
+    @include font_titles(45px, #000000, 48px);
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+
+  .tariff_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tariff_month {
+      @include font_btn_tariff(20px, 32px);
+      background: #FFFFFF;
+      border-radius: 25px 0 0 25px;
+      border: 2px solid #1C1C1D;
+      border-right: 1px solid #1C1C1D;
+      box-shadow: 0 2px 0 #202020;
+
+      &:active {
+        background: #000000;
+        color: #FFFFFF;
+      }
+    }
+
+    .tariff_years {
+      @include font_btn_tariff(20px, 32px);
+      background: #FFFFFF;
+      border-radius: 0 25px 25px 0;
+      border: 2px solid #1C1C1D;
+      border-left: 1px solid #1C1C1D;
+      box-shadow: 0 2px 0 #202020;
+
+      &:active {
+        background: #000000;
+        color: #FFFFFF;
+      }
+
+
+    }
+  }
+}
+
+.plans_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 50px;
+
+  .free_plan {
+   @include tariff_block(#F95A2C);
+  }
+
+  .basic {
+    @include tariff_block(#1BDBC4);
+  }
+
+  .advenced {
+    @include tariff_block(#962EFF);
+  }
+
+  .most_advenced {
+    @include tariff_block(#FFBD12);
+  }
+
+  .plan_info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    width: 210px;
+  }
+
+  .plan_text {
+    @include font_text_medium(18px, #000000, 26px);
+    margin: 0 0 20px;
+  }
+
+  .plan_title {
+    @include font_tariff_title(30px, 45px);
+    margin: 0 0 30px;
+  }
+
+  .plan_items {
+    list-style: none;
+    @include font_text_medium(18px, #000000, 26px);
+    margin: 0 0 30px;
+    padding: 0;
+
+    li {
+      text-align: start;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .tariff_btn {
+    @include  font_btn_tariff(16px, 16px);
+    width: 217px;
+    height: 51px;
+    text-align: center;
+
+    background: #FFFFFF;
+    border: 1px solid #1C1C1D;
+    box-shadow: 0 4px 0 #202020;
+    border-radius: 10px;
+  }
+}

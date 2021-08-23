@@ -1,0 +1,86 @@
+@mixin font_titles ($fz, $clr, $line_height) {
+  font-family: "Permanent Marker",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_regular ($fz, $clr, $line_height) {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_btn ($fz, $clr) {
+  font-family: "Montserrat Black",sans-serif;
+  font-size: $fz;
+  color: $clr;
+}
+
+.e-mail {
+  padding: 72px 0 60px;
+  background: #962EFF;
+
+  .e-mail_title {
+    @include font_titles(45px, #FFFFFF, 48px);
+    width: 483px;
+    margin-bottom: 25px;
+  }
+
+  .e-mail_text {
+    @include font_text_regular(18px, #FFFFFF, 27px);
+    width: 483px;
+    margin: 0 0 50px;
+  }
+
+  .e-mail_form_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .e-mail_input {
+      width: 277px;
+      height: 51px;
+
+      background: #FFFFFF;
+      border: 1px solid #1C1C1D;
+      box-shadow: 0 2px 0 #202020;
+      border-radius: 10px;
+
+      margin-right: 10px;
+      padding-left: 20px;
+
+      &::placeholder {
+        font-family: "Montserrat Medium", sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        color: #1C1C1D;
+      }
+    }
+
+    .e-mail_btn {
+      @include font_btn(16px, #FFFFFF);
+      background: #FFBD12;
+      border: 1px solid #1C1C1D;
+      box-shadow: 0 4px 0 #202020;
+      border-radius: 10px;
+
+      width: 189px;
+      height: 48px;
+    }
+  }
+
+  .clock {
+    position: relative;
+    right: 0;
+  }
+}
+
+.container.e-mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 12px;
+}

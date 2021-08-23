@@ -1,0 +1,113 @@
+
+@mixin font_titles ($fz, $clr, $line_height) {
+  font-family: "Permanent Marker",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_regular ($fz, $clr, $line_height) {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_btn ($fz, $clr) {
+  font-family: "Montserrat Black",sans-serif;
+  font-size: $fz;
+  color: $clr;
+}
+
+.main {
+  background-color: #7711DD;
+
+  .main_icons_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main_social {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 93px;
+  }
+
+  .main_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone {
+    position: relative;
+    right: 0;
+  }
+
+  .main_title {
+    @include font_titles(70px, #FFFFFF, 75px);
+    width: 590px;
+    margin-bottom: 30px;
+  }
+
+  .main_text {
+    @include font_text_regular( 18px, #FFFFFF, 27px);
+    width: 420px;
+    margin: 0 0 50px 0;
+  }
+
+  .main_btn_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .main_download_btn {
+      width: 189px;
+      height: 47px;
+
+      @include font_btn(16px, #000000);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #FFFFFF;
+      border: 1px solid #1C1C1D;
+      box-shadow: 0 4px 0 #202020;
+      border-radius: 10px;
+    }
+
+    .main_play_market_btn {
+      width: 189px;
+      height: 47px;
+      margin-left: 15px;
+
+      @include font_btn(16px, #000000);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #FFFFFF;
+      border: 1px solid #1C1C1D;
+      box-shadow: 0 4px 0 #202020;
+      border-radius: 10px;
+    }
+
+    .download_img {
+      margin-right: 9px;
+    }
+  }
+}
+
+i {
+  color: #FFFFFF;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 0;
+}

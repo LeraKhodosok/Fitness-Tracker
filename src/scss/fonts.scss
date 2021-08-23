@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Permanent Marker';
-  src: url('./src/fonts/PermanentMarker-Regular.eot');
-  src: url('./src/fonts/PermanentMarker-Regular.eot?#iefix') format('embedded-opentype'),
-  url('./src/fonts/PermanentMarker-Regular.woff2') format('woff2'),
-  url('./src/fonts/PermanentMarker-Regular.woff') format('woff'),
-  url('./src/fonts/PermanentMarker-Regular.ttf') format('truetype');
+  src: url('../fonts/PermanentMarker-Regular.eot');
+  src: url('../fonts/PermanentMarker-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PermanentMarker-Regular.woff2') format('woff2'),
+  url('../fonts/PermanentMarker-Regular.woff') format('woff'),
+  url('../fonts/PermanentMarker-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: 'Montserrat Bold';
-  src: url('./src/fonts/Montserrat-Bold.eot');
-  src: url('./src/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-  url('./src/fonts/Montserrat-Bold.woff2') format('woff2'),
-  url('./src/fonts/Montserrat-Bold.woff') format('woff'),
-  url('./src/fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: url('./src/fonts/../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../fonts/Montserrat-Bold.woff') format('woff'),
+  url('../fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -24,11 +24,11 @@
 
 @font-face {
   font-family: 'Montserrat Black';
-  src: url('./src/fonts/Montserrat-Black.eot');
-  src: url('./src/fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
-  url('./src/fonts/Montserrat-Black.woff2') format('woff2'),
-  url('./src/fonts/Montserrat-Black.woff') format('woff'),
-  url('./src/fonts/Montserrat-Black.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Black.eot');
+  src: url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Black.woff2') format('woff2'),
+  url('../fonts/Montserrat-Black.woff') format('woff'),
+  url('../fonts/Montserrat-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -36,11 +36,11 @@
 
 @font-face {
   font-family: 'Montserrat Medium';
-  src: url('./src/fonts/Montserrat-Medium.eot');
-  src: url('./src/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-  url('./src/fonts/Montserrat-Medium.woff2') format('woff2'),
-  url('./src/fonts/Montserrat-Medium.woff') format('woff'),
-  url('./src/fonts/Montserrat-Medium.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Medium.eot');
+  src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+  url('../fonts/Montserrat-Medium.woff') format('woff'),
+  url('../fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -48,11 +48,11 @@
 
 @font-face {
   font-family: 'Montserrat Regular';
-  src: url('./src/fonts/Montserrat-Regular.eot');
-  src: url('./src/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-  url('./src/fonts/Montserrat-Regular.woff2') format('woff2'),
-  url('./src/fonts/Montserrat-Regular.woff') format('woff'),
-  url('./src/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -60,11 +60,11 @@
 
 @font-face {
   font-family: 'Montserrat SemiBold';
-  src: url('./src/fonts/Montserrat-SemiBold.eot');
-  src: url('./src/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('./src/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-  url('./src/fonts/Montserrat-SemiBold.woff') format('woff'),
-  url('./src/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Montserrat-SemiBold.eot');
+  src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+  url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+  url('./src/fonts/../fonts/Montserrat-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;

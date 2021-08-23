@@ -1,0 +1,192 @@
+@mixin font_titles ($fz, $clr, $line_height) {
+  font-family: "Permanent Marker",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_medium ($fz, $clr, $line_height) {
+  font-family: "Montserrat Medium", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_regular ($fz, $clr, $line_height) {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_text_bold ($fz, $clr, $line_height) {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line_height;
+}
+
+@mixin font_btn ($fz, $line_height) {
+  font-family: "Montserrat Black", sans-serif;
+  font-size: $fz;
+  line-height: $line_height;
+  color: #FFFFFF;
+  width: 189px;
+  height: 47px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FA6648;
+  border: 1px solid #1C1C1D;
+  box-shadow: 0 4px 0 #202020;
+  border-radius: 10px;
+}
+
+.authorization {
+  background: #FFFFFF;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 80px 222px 80px 122px;
+
+  .authorization_info {
+    margin-right: 208px;
+  }
+
+  .authorization_title {
+    @include font_titles(45px, #000000, 48px);
+    width: 400px;
+    margin: 0 0 25px;
+  }
+
+  .authorization_text {
+    @include font_text_regular(18px, #474A57, 27px);
+    margin: 0 0 50px;
+    width: 400px;
+  }
+
+  .authorization_btn_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding-bottom: 40px;
+
+    .authorization_btn_download,
+    .authorization_play-market {
+      @include font_btn(16px, 16px);
+      margin-right: 29px;
+    }
+
+    .download_img {
+      margin-right: 8px;
+    }
+  }
+}
+
+.authorization_container {
+  background: #FFFFFF;
+  width: 400px;
+  height: 541px;
+  padding: 40px 40px 44px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid #1C1C1D;
+  box-shadow: 0 8px 0 #202020;
+  border-radius: 10px;
+
+  .authorization_btn_container {
+    width: 440px;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    .sign_btn, .log_btn {
+      @include font_text_bold(24px, #000000, 32px);
+      background: transparent;
+      margin-right: 19px;
+      border: none;
+    }
+
+    .sign_btn:hover {
+      color: #FA6648;
+    }
+
+    .log_btn:hover {
+      color: #FA6648;
+    }
+  }
+
+  .authorization_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .authorization_input {
+      width: 403px;
+      height: 50px;
+      padding-left: 20px;
+
+      background: #FFFFFF;
+      border: 1px solid #1C1C1D;
+      box-shadow: 0 2px 0 #202020;
+      border-radius: 10px;
+
+      margin-bottom: 16px;
+
+      &::placeholder {
+        @include font_text_medium(18px, #1C1C1D, 26px);
+      }
+
+      &:last-child {
+         margin-bottom: 33px;
+       }
+    }
+  }
+}
+
+.check {
+  margin-bottom: 33px;
+  width: 440px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  .authorization_checkbox {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 15px;
+  }
+
+  .authorization_checkbox_text {
+    @include font_text_medium(18px, #474A57, 26px);
+  }
+}
+
+.authorization_btn {
+  @include font_btn(16px, 16px);
+  color: #FFFFFF;
+
+  background: #FA6648;
+  border: 1px solid #1C1C1D;
+  box-shadow: 0 4px 0 #202020;
+  border-radius: 10px;
+
+  width: 440px;
+  height: 50px;
+}
+
+.authorization_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

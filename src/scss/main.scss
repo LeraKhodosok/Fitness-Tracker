@@ -1,3 +1,10 @@
+@import "~swiper/swiper-bundle.min.css";
+//@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/containers";
+
 @import "header";
 @import "about";
 @import "e-mail";
@@ -6,4 +13,8 @@
 @import "authorization";
 @import "footer";
 @import "fonts";
+
+body {
+  margin: 0;
+}
 
