@@ -229,6 +229,7 @@ i {
 }
 
 .mobile_menu {
+  display: none;
   right: -100%;
   transition: right .3s;
 }

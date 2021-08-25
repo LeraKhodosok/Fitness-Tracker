@@ -303,6 +303,7 @@ i {
 }
 
 .mobile_menu {
+  display: none;
   right: -100%;
   transition: right 0.3s;
 }
