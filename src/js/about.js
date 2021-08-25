@@ -12,27 +12,27 @@ const swiper = new SwiperCore('.about-slider', {
     breakpoints: {
         320: {
             slidesPerView: 1,
-            centeredSlides: true,
         },
         480: {
             slidesPerView: 2,
-            centeredSlides: true,
         },
         576: {
-            slidesPerView: 3,
-            centeredSlides: true,
+            slidesPerView: 2,
         },
         768: {
             slidesPerView: 3,
-            centeredSlides: true,
         },
         992: {
+            slidesPerView: 3,
+        },
+        1100: {
             slidesPerView: 4,
-            centeredSlides: true,
         },
         1200: {
+            slidesPerView: 4,
+        },
+        1450: {
             slidesPerView: 5,
-            centeredSlides: true,
         }
     }
 });

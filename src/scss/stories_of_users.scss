@@ -1,17 +1,3 @@
-@mixin font_titles ($fz, $clr, $line_height) {
-  font-family: "Permanent Marker",sans-serif;
-  font-size: $fz;
-  color: $clr;
-  line-height: $line_height;
-}
-
-@mixin font_text_regular ($fz, $clr, $line_height) {
-  font-family: "Montserrat Regular", sans-serif;
-  font-size: $fz;
-  color: $clr;
-  line-height: $line_height;
-}
-
 .stories {
   background: #FFFFFF;
   padding: 150px 0 200px;
