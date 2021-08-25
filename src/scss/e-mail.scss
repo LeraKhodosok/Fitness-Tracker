@@ -26,18 +26,40 @@
     @include font_titles(45px, #FFFFFF, 48px);
     width: 483px;
     margin-bottom: 25px;
+
+    @media (max-width: 1200px) {
+      @include font_titles(40px, #FFFFFF, 40px);
+      width: 400px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   .e-mail_text {
     @include font_text_regular(18px, #FFFFFF, 27px);
     width: 483px;
     margin: 0 0 50px;
+
+    @media (max-width: 1200px) {
+      @include font_text_regular(16px, #FFFFFF, 22px);
+      width: 400px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   .e-mail_form_container {
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .e-mail_input {
       width: 277px;
@@ -49,13 +71,37 @@
       border-radius: 10px;
 
       margin-right: 10px;
-      padding-left: 20px;
+      padding: 0 20px;
 
       &::placeholder {
         font-family: "Montserrat Medium", sans-serif;
         font-size: 18px;
         line-height: 26px;
         color: #1C1C1D;
+
+        @media (max-width: 1200px) {
+          font-size: 16px;
+        }
+        @media (max-width: 992px) {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        width: 200px;
+        height: 41px;
+      }
+      @media (max-width: 992px) {
+        width: 150px;
+        height: 41px;
+      }
+      @media (max-width: 768px) {
+        width: 200px;
+        height: 41px;
+      }
+      @media (max-width: 576px) {
+        width: 100%;
+        margin-bottom: 30px;
       }
     }
 
@@ -68,12 +114,44 @@
 
       width: 189px;
       height: 48px;
+
+      @media (max-width: 1200px) {
+        @include font_btn(14px, #FFFFFF);
+        width: 150px;
+        height: 40px;
+      }
+      @media (max-width: 992px) {
+        @include font_btn(14px, #FFFFFF);
+        width: 120px;
+        height: 40px;
+      }
+      @media (max-width: 768px) {
+        width: 150px;
+        height: 40px;
+      }
+      @media (max-width: 480px) {
+        width: 170px;
+        height: 45px;
+      }
     }
   }
 
   .clock {
     position: relative;
     right: 0;
+
+    @media (max-width: 1200px) {
+      width: calc(574px - 70px);
+      height: calc(627px - 70px);
+    }
+    @media (max-width: 992px) {
+      width: calc(574px - 230px);
+      height: calc(627px - 230px);
+    }
+    @media (max-width: 480px) {
+      width: calc(574px - 330px);
+      height: calc(627px - 330px);
+    }
   }
 }
 
@@ -83,4 +161,20 @@
   align-items: center;
 
   padding: 0 12px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 576px) {
+    width: 85%;
+  }
+}
+
+.e-mail_form {
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

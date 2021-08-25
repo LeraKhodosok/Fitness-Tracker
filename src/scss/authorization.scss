@@ -51,22 +51,64 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 80px 222px 80px 122px;
+  padding: 80px 0;
 
   .authorization_info {
     margin-right: 208px;
+
+    @media (max-width: 1400px) {
+      margin-right: 180px;
+    }
+    @media (max-width: 1200px) {
+      margin-right: 130px;
+    }
+    @media (max-width: 992px) {
+      margin-right: 50px;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    @media (max-width: 480px) {
+      padding: 0 20px;
+    }
   }
 
   .authorization_title {
     @include font_titles(45px, #000000, 48px);
     width: 400px;
     margin: 0 0 25px;
+
+    @media (max-width: 1200px) {
+      @include font_titles(40px, #000000, 40px);
+    }
+    @media (max-width: 1200px) {
+      width: 300px;
+    }
+    @media (max-width: 768px) {
+      width: 400px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   .authorization_text {
     @include font_text_regular(18px, #474A57, 27px);
     margin: 0 0 50px;
     width: 400px;
+
+    @media (max-width: 1200px) {
+      @include font_text_regular(16px, #474A57, 22px);
+    }
+    @media (max-width: 1200px) {
+      width: 300px;
+    }
+    @media (max-width: 768px) {
+      width: 400px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   .authorization_btn_container {
@@ -76,10 +118,35 @@
 
     padding-bottom: 40px;
 
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .authorization_btn_download,
     .authorization_play-market {
       @include font_btn(16px, 16px);
       margin-right: 29px;
+
+      @media (max-width: 1200px) {
+        @include font_btn(14px, 16px);
+        margin-right: 25px;
+        width: 150px;
+        height: 40px;
+      }
+
+      @media (max-width: 480px) {
+        @include font_btn(16px, 16px);
+        width: 170px;
+        height: 45px;
+      }
+
+      @media (max-width: 480px) {
+        margin-bottom: 20px;
+      }
     }
 
     .download_img {
@@ -92,7 +159,7 @@
   background: #FFFFFF;
   width: 400px;
   height: 541px;
-  padding: 40px 40px 44px;
+  padding: 40px 70px 44px;
 
   display: flex;
   flex-direction: column;
@@ -102,6 +169,36 @@
   box-shadow: 0 8px 0 #202020;
   border-radius: 10px;
 
+  @media (max-width: 1400px) {
+    width: 300px;
+    height: 491px;
+  }
+  @media (max-width: 1200px) {
+    width: 350px;
+    height: 470px;
+    padding: 30px 20px 24px;
+  }
+  @media (max-width: 992px) {
+    padding: 30px 20px 24px;
+    width: 320px;
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    padding: 30px 20px 24px;
+    width: 320px;
+    height: 420px;
+  }
+  @media (max-width: 576px) {
+    padding: 30px 20px 34px;
+    width: 300px;
+    height: 400px;
+  }
+  @media (max-width: 480px) {
+    padding: 30px 20px 54px;
+    width: 250px;
+    height: 400px;
+  }
+
   .authorization_btn_container {
     width: 440px;
 
@@ -109,19 +206,12 @@
     justify-content: start;
     align-items: start;
 
-    .sign_btn, .log_btn {
-      @include font_text_bold(24px, #000000, 32px);
-      background: transparent;
-      margin-right: 19px;
-      border: none;
+    @media (max-width: 1400px) {
+      width: 340px;
     }
-
-    .sign_btn:hover {
-      color: #FA6648;
-    }
-
-    .log_btn:hover {
-      color: #FA6648;
+    @media (max-width: 992px) {
+      width: 240px;
+      padding-bottom: 20px;
     }
   }
 
@@ -133,7 +223,7 @@
     .authorization_input {
       width: 403px;
       height: 50px;
-      padding-left: 20px;
+      padding: 0 20px;
 
       background: #FFFFFF;
       border: 1px solid #1C1C1D;
@@ -142,12 +232,36 @@
 
       margin-bottom: 16px;
 
+      &:focus-visible {
+        outline: none;
+      }
+
+      @media (max-width: 1400px) {
+        width: 130%;
+        height: 50px;
+      }
+      @media (max-width: 992px) {
+        height: 40px;
+        width: 100%;
+      }
+
       &::placeholder {
         @include font_text_medium(18px, #1C1C1D, 26px);
+
+        @media (max-width: 1200px) {
+          @include font_text_medium(16px, #1C1C1D, 24px);
+        }
+        @media (max-width: 992px) {
+          @include font_text_medium(14px, #1C1C1D, 20px);
+        }
       }
 
       &:last-child {
          margin-bottom: 33px;
+
+        @media (max-width: 992px) {
+          margin-bottom: 17px;
+        }
        }
     }
   }
@@ -160,15 +274,38 @@
   justify-content: start;
   align-items: center;
 
+  @media (max-width: 1400px) {
+    width: 340px;
+  }
+  @media (max-width: 992px) {
+    width: 240px;
+  }
+
   .authorization_checkbox {
     width: 32px;
     height: 32px;
 
     margin-right: 15px;
+
+    @media (max-width: 1200px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media (max-width: 992px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .authorization_checkbox_text {
     @include font_text_medium(18px, #474A57, 26px);
+
+    @media (max-width: 1200px) {
+      @include font_text_medium(16px, #474A57, 24px);
+    }
+    @media (max-width: 992px) {
+      @include font_text_medium(14px, #474A57, 20px);
+    }
   }
 }
 
@@ -183,10 +320,63 @@
 
   width: 440px;
   height: 50px;
+
+  @media (max-width: 1400px) {
+    width: 340px;
+    height: 50px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 320px;
+    height: 45px;
+  }
+  @media (max-width: 992px) {
+    width: 100%;
+    height: 40px;
+  }
+  @media (max-width: 480px) {
+    width: 170px;
+    height: 45px;
+  }
 }
 
 .authorization_block {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1400px) {
+    justify-content: start;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.authorization_btns {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: start;
+
+  width: 100%;
+
+  .sign_btn, .log_btn {
+    @include font_text_bold(24px, #000000, 32px);
+    background: transparent;
+    margin-right: 19px;
+    border: none;
+
+    @media (max-width: 1200px) {
+      @include font_text_bold(22px, #000000, 27px);
+    }
+  }
+
+  .sign_btn:hover {
+    color: #FA6648;
+  }
+
+  .log_btn:hover {
+    color: #FA6648;
+  }
 }
