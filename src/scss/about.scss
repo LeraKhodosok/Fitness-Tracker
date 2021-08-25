@@ -55,7 +55,7 @@
 
   .about-slider {
 
-    .swiper-slide {
+    .about-slide {
       width: 340px;
       height: 183px;
       padding: 25px 23px 30px 20px;
@@ -63,6 +63,10 @@
       border: 2px solid #1C1C1D;
       box-shadow: 0 4px 0 #202020;
       border-radius: 10px;
+
+      @include media-breakpoint-down(xs) {
+        width: auto;
+      }
 
       &.red {
         background: #FA6648;
