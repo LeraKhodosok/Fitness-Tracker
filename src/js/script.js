@@ -1,10 +1,8 @@
 const menu = document.querySelector('.menu');
-const menuToggle = document.querySelector('.menu_toggle');
 const menuClose = document.querySelector('.fa-times');
 const menuMobile = document.querySelector('.mobile_menu');
 
 menu.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
     menuMobile.classList.add('active');
 });
 
